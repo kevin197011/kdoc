@@ -1,0 +1,20 @@
+<nav class="vp-toc">
+  <h3>目录</h3>
+  <ul id="toc-list"></ul>
+</nav>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toc = document.getElementById('toc-list');
+  if (!toc) return;
+  const headers = document.querySelectorAll('.vp-main h2, .vp-main h3');
+  headers.forEach(h => {
+    const li = document.createElement('li');
+    li.className = h.tagName.toLowerCase();
+    const a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = h.textContent;
+    li.appendChild(a);
+    toc.appendChild(li);
+  });
+});
+</script>

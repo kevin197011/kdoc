@@ -1,0 +1,7 @@
+<aside class="vp-sidebar">
+  <nav>
+    {% for item in site.data.sidebar %}
+      <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+    {% endfor %}
+  </nav>
+</aside>
