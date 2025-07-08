@@ -1,6 +1,14 @@
-- title: 快速开始
-  url: /guide/
-- title: 配置
-  url: /guide/config/
-- title: 插件
-  url: /guide/plugins/
+- group: 指南
+  items:
+    - title: 快速开始
+      url: /guide/
+    - title: 配置
+      url: /guide/config/
+    - title: 插件
+      url: /guide/plugins/
+- group: API
+  items:
+    - title: API 概览
+      url: /api/
+    - title: 示例接口
+      url: /api/example/
