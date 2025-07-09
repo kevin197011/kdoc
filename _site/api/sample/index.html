@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>示例接口 | Kdoc 风格文档主题</title>
+    <title>示例 API 文档 | Kdoc 风格文档主题</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
     <script>
@@ -112,15 +112,15 @@
       
     
       
-      <a href="/api/example/" class="flex items-center px-4 py-3 rounded-lg transition font-semibold text-lg gap-3 bg-[#cc342d] text-white">
-        <i class="fa-solid fa-file-lines text-xl text-white"></i>
+      <a href="/api/example/" class="flex items-center px-4 py-3 rounded-lg transition font-semibold text-lg gap-3 hover:bg-[#fbeaea] text-gray-900">
+        <i class="fa-solid fa-file-lines text-xl text-[#cc342d]"></i>
         <span>示例接口</span>
       </a>
       
     
       
-      <a href="/api/sample/" class="flex items-center px-4 py-3 rounded-lg transition font-semibold text-lg gap-3 hover:bg-[#fbeaea] text-gray-900">
-        <i class="fa-solid fa-file-lines text-xl text-[#cc342d]"></i>
+      <a href="/api/sample/" class="flex items-center px-4 py-3 rounded-lg transition font-semibold text-lg gap-3 bg-[#cc342d] text-white">
+        <i class="fa-solid fa-file-lines text-xl text-white"></i>
         <span>范例接口</span>
       </a>
       
@@ -133,16 +133,20 @@
 
       <main class="flex-1 ml-0 md:ml-64 flex flex-col items-center justify-start py-12 px-4 md:px-0 transition-all duration-200">
         <div class="kdoc-content prose prose-neutral w-full max-w-3xl min-w-0 bg-white rounded-2xl shadow-lg p-8 md:p-12 min-h-[70vh] border border-gray-200" style="max-width: 700px;">
-          <h1 id="示例接口">示例接口</h1>
+          <h1 id="示例-api-文档">示例 API 文档</h1>
 
-<h2 id="get-apihello">GET /api/hello</h2>
+<p>这是一个用于演示的 API 文档页面。</p>
 
-<p>返回 Hello World。</p>
+<h2 id="示例接口">示例接口</h2>
 
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
-  <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Hello World"</span>
-<span class="p">}</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /api/sample
 </code></pre></div></div>
+
+<p>返回：</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hello, world!"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
 
         </div>
         <nav class="kdoc-toc hidden xl:block fixed right-8 top-24 w-64 bg-white border border-gray-200 rounded-xl shadow-lg p-5 max-h-[60vh] overflow-auto z-50">
